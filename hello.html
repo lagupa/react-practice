@@ -23,8 +23,8 @@
         class Hello extends React.Component{
             render (){
                 return  (
-                    //use this.props.nameofproperty
-                    <h1>Hello {this.props.name}</h1>
+                    //use use the || operator
+                    <h1>Hello {this.props.name || "Andrew"}</h1>
                 );
             }
         }
@@ -38,6 +38,8 @@
                         <Hello name ="John"/>
                         <Hello name ="Marilyn"/>
                         <Hello name ="Stephen"/>
+                        <Hello />
+                        <Hello />
                     </div>
                 );
             }
