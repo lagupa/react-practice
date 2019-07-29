@@ -41,9 +41,9 @@
 
             handleIncrement = ()=>{
                 
-                this.setState({
+                this.setState(oldState=>({
                     count:this.state.count + 1
-                })
+                }))
             }
            
         }
