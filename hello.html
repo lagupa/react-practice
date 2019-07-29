@@ -25,14 +25,14 @@
                 return  (
                    
                    <div>
-                        <h1>Hello</h1>
+                        <h1>Hello {this.props.name}</h1>
                         <button onClick={this.handleClick}>Click Here</button>
                    </div>
                     
                 );
             }
 
-            handleClick= ()=>{
+            handleClick = ()=>{
                 alert("Hi")
             }
         }
@@ -41,7 +41,7 @@
             render(){
                 return(
                     <div> 
-                        <Hello />
+                        <Hello name="Andrew" />
                         
                     </div>
                 );
