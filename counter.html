@@ -33,6 +33,7 @@
                     <div>
                         <h1>{this.state.count}</h1>
                         <button onClick={this.handleIncrement}>Increment</button>
+                        <button onClick={this.handleDecrement}>Decrement</button>
 
 
                     </div>
@@ -45,7 +46,12 @@
                     count:this.state.count + 1
                 }))
             }
-           
+
+            handleDecrement =()=>{
+                this.setState(state=>({   
+                count:this.state.count - 1
+                }));
+            }
         }
 
         class App extends React.Component{
