@@ -23,9 +23,17 @@
         class Hello extends React.Component{
             render (){
                 return  (
-                    //use use the || operator
-                    <h1>Hello {this.props.name || "Andrew"}</h1>
+                   
+                   <div>
+                        <h1>Hello</h1>
+                        <button onClick={this.handleClick}>Click Here</button>
+                   </div>
+                    
                 );
+            }
+
+            handleClick= ()=>{
+                alert("Hi")
             }
         }
 
@@ -33,13 +41,8 @@
             render(){
                 return(
                     <div> 
-                        <Hello name ="Lagu"/>
-                        <Hello name ="Josh" />
-                        <Hello name ="John"/>
-                        <Hello name ="Marilyn"/>
-                        <Hello name ="Stephen"/>
                         <Hello />
-                        <Hello />
+                        
                     </div>
                 );
             }
